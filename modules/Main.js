@@ -1,4 +1,4 @@
-import collection from './index.js';
+export const collection = document.querySelector('#book-collection');
 // main class
 export default class Main {
   static displayBooks() {

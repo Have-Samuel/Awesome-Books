@@ -10,7 +10,7 @@
 - CSS3
 - JavaScript
 
-## Live Demo (if available)
+## Live Demo (https://have-samuel.github.io/Awesome-Books/)
 
 [Live Demo Link](https://livedemo.com)
 
