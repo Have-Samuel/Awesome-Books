@@ -1,7 +1,6 @@
-// Today
 /* eslint-disable max-classes-per-file */
 // Books
-class Books {
+class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -14,15 +13,15 @@ class Main {
     // eslint-disable-next-line no-use-before-define
     const books = Store.getBooks();
 
-    books.forEach((book) => Main.addBookTitile(book));
+    books.forEach((book) => Main.addBookToList(book));
   }
 
-  static addBookTitile(book) {
+  static addBookToList(book) {
     const collection = document.querySelector('#books-collection');
 
     const element = document.createElement('div');
     element.classList.add('item');
-    element.setAttribute(id, book.title);
+    element.setAttribute('id', book.title);
 
     element.innerHTML = `
     <p id="author">"${book.title}" by ${book.author}</p>
@@ -39,7 +38,7 @@ class Main {
 
   static clearFields() {
     document.querySelector('#new-title').value = '';
-    document.querySelector('#new-title').value = '';
+    document.querySelector('#new-author').value = '';
   }
 }
 
@@ -59,7 +58,8 @@ class Store {
     const books = Store.getBooks();
 
     books.push(book);
-    localStorage.setItem('book', JSON.stringify(books));
+
+    localStorage.setItem('books', JSON.stringify(books));
   }
 
   static removeBook(index) {
@@ -88,7 +88,7 @@ document.querySelector('#add').addEventListener('click', (e) => {
   const author = document.querySelector('#new-author').value;
 
   // instatiate book
-  const book = new Books(title, author);
+  const book = new Book(title, author);
 
   // Add Book to Main
   Main.addBookToList(book);
@@ -112,7 +112,7 @@ document.querySelector('#books-colection').addEventListener('click', (e) => {
 // Full Website
 // List
 const item1 = document.querySelector('#nav-item1');
-const bookSection = document.querySelector('.form');
+const bookSection = document.querySelector('#list');
 
 // Add new
 const item2 = document.querySelector('#nav-item2');
@@ -131,16 +131,16 @@ item1.addEventListener('click', () => {
 
 // Add new function
 item2.addEventListener('click', () => {
-  bookSection.style.display = 'block';
-  formSection.style.display = 'none';
+  formSection.style.display = 'block';
+  bookSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
 
 // Contact function
 item3.addEventListener('click', () => {
-  bookSection.style.display = 'block';
+  contactSection.style.display = 'block';
+  bookSection.style.display = 'none';
   formSection.style.display = 'none';
-  contactSection.style.display = 'none';
 });
 
 const dayTime = document.querySelector('#date');
