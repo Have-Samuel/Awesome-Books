@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Have-Samuel/Awesome-Books/issues"
   },
-  "homepage": "https://github.com/Have-Samuel/Awesome-Books#readme"
+  "homepage": "https://github.com/Have-Samuel/Awesome-Books#readme",
+  "dependencies": {
+    "luxon": "^2.3.1"
+  }
 }
