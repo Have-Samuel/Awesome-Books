@@ -1,5 +1,5 @@
 // main class
-class Main {
+export default class Main {
   static displayBooks() {
     // eslint-disable-next-line no-use-before-define
     const books = Store.getBooks();

@@ -1,20 +1,15 @@
-import bookController from './modules/bookController.js';
-import book from './modules/Book.js';
-import Content from './modules/content.js';
-import Storage from './modules/storage.js';
-import Date from '/modules/date.js';
+import {addBookList, removeBookList, functionProprty, newFunction, contactFunction} from "./modules/bookController.js";
 
-/* eslint-disable max-classes-per-file */
-// Books
+
 const collection = document.querySelector('#book-collection');
 
 
-
 // Event: Display Books
+// Event: Add a book
+addBookList();
 
-
-
-
+// Event: Remove a book
+removeBookList(collection);
 // Full Website
 // List
 const item1 = document.querySelector('#nav-item1');
@@ -28,6 +23,24 @@ const formSection = document.querySelector('.form');
 const item3 = document.querySelector('#nav-item3');
 const contactSection = document.querySelector('#contact');
 
-// Date
+// list function
+functionProprty(item1, bookSection, formSection, contactSection);
+
+// Add new function
+newFunction(item2, bookSection, formSection, contactSection);
+;item2.addEventListener('click', () => {
+  formSection.style.display = 'block';
+  bookSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+// Contact function
+contactFunction(item3, bookSection, formSection, contactSection);
+item3.addEventListener('click', () => {
+  contactSection.style.display = 'block';
+  bookSection.style.display = 'none';
+  formSection.style.display = 'none';
+});
+
 const dayTime = document.querySelector('#date');
 dayTime.innerText = new Date();
