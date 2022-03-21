@@ -1,7 +1,7 @@
 import {addBookList, removeBookList, functionProprty, newFunction, contactFunction} from "./modules/bookController.js";
 
 
-const collection = document.querySelector('#book-collection');
+export const collection = document.querySelector('#book-collection');
 
 
 // Event: Display Books

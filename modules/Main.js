@@ -1,9 +1,10 @@
+import collection from './index.js';
 // main class
 export default class Main {
   static displayBooks() {
     // eslint-disable-next-line no-use-before-define
     const books = Store.getBooks();
-    
+
     books.forEach((book) => Main.addBookToList(book));
   }
 
