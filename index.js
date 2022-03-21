@@ -1,5 +1,6 @@
 /* eslint-disable max-classes-per-file */
 // Books
+const collection = document.querySelector('#book-collection');
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -17,8 +18,6 @@ class Main {
   }
 
   static addBookToList(book) {
-    const collection = document.querySelector('#books-collection');
-
     const element = document.createElement('div');
     element.classList.add('item');
     element.setAttribute('id', book.title);
@@ -101,8 +100,8 @@ document.querySelector('#add').addEventListener('click', (e) => {
 });
 
 // Event: Remove a book
-document.querySelector('#books-colection').addEventListener('click', (e) => {
-  // From Main
+collection.addEventListener('click', (e) => {
+// From Main
   Main.deleteBook(e.target);
 
   // From Store
