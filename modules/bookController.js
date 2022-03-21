@@ -44,20 +44,23 @@ item1.addEventListener('click', () => {
   contactSection.style.display = 'none';
 });
 }
+
 // Add new function
-const newFunction = () => {
+const newFunction = (item2, bookSection, formSection, contactSection) => {
 item2.addEventListener('click', () => {
   formSection.style.display = 'block';
   bookSection.style.display = 'none';
   contactSection.style.display = 'none';
 });
 }
+
 // Contact function
-const contactFunction = () => {
+const contactFunction = (item3, bookSection, formSection, contactSection) => {
 item3.addEventListener('click', () => {
   contactSection.style.display = 'block';
   bookSection.style.display = 'none';
   formSection.style.display = 'none';
 });
 }
+
 export {addBookList, removeBookList, functionProprty, newFunction, contactFunction};

@@ -28,19 +28,10 @@ functionProprty(item1, bookSection, formSection, contactSection);
 
 // Add new function
 newFunction(item2, bookSection, formSection, contactSection);
-;item2.addEventListener('click', () => {
-  formSection.style.display = 'block';
-  bookSection.style.display = 'none';
-  contactSection.style.display = 'none';
-});
+
 
 // Contact function
 contactFunction(item3, bookSection, formSection, contactSection);
-item3.addEventListener('click', () => {
-  contactSection.style.display = 'block';
-  bookSection.style.display = 'none';
-  formSection.style.display = 'none';
-});
 
 const dayTime = document.querySelector('#date');
 dayTime.innerText = new Date();
