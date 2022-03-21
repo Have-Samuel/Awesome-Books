@@ -1,12 +1,7 @@
 /* eslint-disable max-classes-per-file */
 // Books
 const collection = document.querySelector('#book-collection');
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-  }
-}
+
 
 // main class
 class Main {
