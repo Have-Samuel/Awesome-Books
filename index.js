@@ -1,3 +1,9 @@
+import bookController from './modules/bookController.js';
+import book from './modules/Book.js';
+import Content from './modules/content.js';
+import Storage from './modules/storage.js';
+import Date from '/modules/date.js';
+
 /* eslint-disable max-classes-per-file */
 // Books
 const collection = document.querySelector('#book-collection');
@@ -22,7 +28,6 @@ const formSection = document.querySelector('.form');
 const item3 = document.querySelector('#nav-item3');
 const contactSection = document.querySelector('#contact');
 
-
-
+// Date
 const dayTime = document.querySelector('#date');
 dayTime.innerText = new Date();
