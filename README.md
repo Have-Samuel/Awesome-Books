@@ -10,10 +10,7 @@
 - CSS3
 - JavaScript
 
-## Live Demo (https://have-samuel.github.io/Awesome-Books/)
-
-[Live Demo Link](https://livedemo.com)
-
+## Live Demo[Live Demo Link](https://have-samuel.github.io/Awesome-Books/)
 
 ## General Requirements
 - CSS Preprocessor
