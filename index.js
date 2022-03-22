@@ -39,5 +39,3 @@ contactFunction(item3, bookSection, formSection, contactSection);
 //  import { DateTime } from  'luxon';
 
 dayTime;
- 
-
