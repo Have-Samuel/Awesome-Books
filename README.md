@@ -1,56 +1,48 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
-> Description the project.
-
+> In this project, I created a plain javascript project which is add a book title and it's author into localstorage and retrive the items to book list section.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JavaScript
 
-## Live Demo (if available)
+## Live Demo[Live Demo Link](https://have-samuel.github.io/Awesome-Books/)
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## General Requirements
+- CSS Preprocessor
+- JavaScript used for Dom Manipulation
+- JavaScript events are used
+- JavaScript objects to store and access data
+- Browser Local Storage
+- Semantic HTML Tag
+- CSS Box Model
+- CSS FlexBox
+- Device Adaptability
+- Github pages for deployment
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+### Specific Requirements
+> npm init -y command used to create package.json file
+> ES6 Syntax is used
+> Codes are divided into modules
+> Method and functions are refactored with arrow functions
+> let and const are used instead of var
+> Luxon library is used for the current date
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Have Samuel**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Have-Samuel)
+- Twitter: [@twitterhandle](https://twitter.com/home)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/feed)
 
 ## 🤝 Contributing
 
