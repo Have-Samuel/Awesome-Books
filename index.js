@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import {
 
   addBookList, removeBookList, functionProprty, newFunction, contactFunction,
