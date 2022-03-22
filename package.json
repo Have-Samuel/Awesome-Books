@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Have-Samuel/Awesome-Books#readme",
   "dependencies": {
     "luxon": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/luxon": "^2.3.1"
   }
 }

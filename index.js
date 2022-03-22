@@ -6,6 +6,7 @@ import {
 from './modules/bookController.js';
 
 import { collection } from './modules/Main.js';
+import dayTime from './modules/date.js';
 
 // Event: Display Books
 // Event: Add a book
@@ -34,3 +35,9 @@ newFunction(item2, bookSection, formSection, contactSection);
 
 // Contact function
 contactFunction(item3, bookSection, formSection, contactSection);
+
+//  import { DateTime } from  'luxon';
+
+dayTime;
+ 
+
