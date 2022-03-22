@@ -1,4 +1,9 @@
-import { addBookList, removeBookList, functionProprty, newFunction, contactFunction } from './modules/bookController.js';
+import {
+
+  addBookList, removeBookList, functionProprty, newFunction, contactFunction
+}
+
+from './modules/bookController.js';
 
 import { collection } from './modules/Main.js';
 
@@ -29,8 +34,3 @@ newFunction(item2, bookSection, formSection, contactSection);
 
 // Contact function
 contactFunction(item3, bookSection, formSection, contactSection);
-
-import { DateTime } from '/node_modules/luxon/src/luxon.js';
-
-const dayTime = document.querySelector('#date');
-dayTime.innerText = DateTime.now().toFormat('MMMM dd, yyyy');
