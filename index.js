@@ -1,6 +1,6 @@
 import {
 
-  addBookList, removeBookList, functionProprty, newFunction, contactFunction
+  addBookList, removeBookList, functionProprty, newFunction, contactFunction,
 }
 
 from './modules/bookController.js';

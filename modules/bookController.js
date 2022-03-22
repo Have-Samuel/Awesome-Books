@@ -38,7 +38,7 @@ const removeBookList = (collection) => {
 
 // list function
 const functionProprty = (item1, bookSection, formSection, contactSection) => {
-item1.addEventListener('click', () => {
+  item1.addEventListener('click', () => {
     bookSection.style.display = 'block';
     formSection.style.display = 'none';
     contactSection.style.display = 'none';
@@ -47,7 +47,7 @@ item1.addEventListener('click', () => {
 
 // Add new function
 const newFunction = (item2, bookSection, formSection, contactSection) => {
-item2.addEventListener('click', () => {
+  item2.addEventListener('click', () => {
     formSection.style.display = 'block';
     bookSection.style.display = 'none';
     contactSection.style.display = 'none';
@@ -56,11 +56,15 @@ item2.addEventListener('click', () => {
 
 // Contact function
 const contactFunction = (item3, bookSection, formSection, contactSection) => {
-item3.addEventListener('click', () => {
+  item3.addEventListener('click', () => {
     contactSection.style.display = 'block';
     bookSection.style.display = 'none';
     formSection.style.display = 'none';
   });
 };
 
-export { addBookList, removeBookList, functionProprty, newFunction, contactFunction };
+export {
+
+  addBookList, removeBookList, functionProprty, newFunction, contactFunction,
+
+};
